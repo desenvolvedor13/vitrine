@@ -1,40 +1,80 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-
-<html lang="pt-br">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Évora</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contato - Évora</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Link para o Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Entre em Contato</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="marmore.html">Móveis de Mármore</a></li>
-        <li><a href="mdf.html">Móveis de MDF</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-gray-100 font-sans">
 
-  <section>
-    <h2>Solicite seu Orçamento</h2>
-    <form action="https://formsubmit.co/seu-email@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu Nome" required>
-      <input type="email" name="email" placeholder="Seu Email" required>
-      <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <div id="page-wrapper">
 
-  <footer>
-    <p>&copy; 2025 Évora - Todos os direitos reservados.</p>
-  </footer>
+        <!-- Header -->
+        <section id="header" class="bg-white shadow-lg py-6">
+            <div class="container mx-auto flex justify-between items-center">
+                <div id="logo" class="text-3xl font-bold text-gray-800">
+                    <a href="index.html">Évora Móveis</a>
+                </div>
+                <nav id="nav" class="space-x-6">
+                    <ul class="flex space-x-6 text-gray-700">
+                        <li><a href="index.html" class="hover:text-gray-900">Home</a></li>
+                        <li><a href="marmore.html" class="hover:text-gray-900">Mármore</a></li>
+                        <li><a href="mdf.html" class="hover:text-gray-900">MDF</a></li>
+                        <li><a href="contato.html" class="text-gray-900 font-bold">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-50 py-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Entre em Contato</h2>
+                <p class="text-lg text-gray-600 mb-8">Preencha o formulário abaixo para entrar em contato conosco:</p>
+                
+                <form method="post" action="enviar-email.php" class="max-w-xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+                    <div class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <input type="text" name="nome" id="contact-name" placeholder="Nome" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+                            </div>
+                            <div>
+                                <input type="email" name="email" id="contact-email" placeholder="Email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+                            </div>
+                        </div>
+                        <div>
+                            <textarea name="mensagem" id="contact-message" placeholder="Mensagem" rows="4" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"></textarea>
+                        </div>
+                        <div class="flex justify-between">
+                            <input type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600" value="Enviar" />
+                            <input type="reset" class="bg-gray-300 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600" value="Limpar" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer" class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto text-center">
+                <h3 class="text-2xl font-semibold mb-4">Informações de Contato</h3>
+                <p class="text-lg mb-6">Se preferir, você pode nos contactar diretamente pelos nossos canais abaixo:</p>
+                <div class="flex justify-center space-x-12">
+                    <div>
+                        <h4 class="font-semibold">Endereço</h4>
+                        <p>Rua Exemplo, 123, Bairro, Cidade - Estado, 00000-000</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Telefone</h4>
+                        <p>(00) 1234-5678</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
 </body>
 </html>
