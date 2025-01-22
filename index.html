@@ -11,78 +11,70 @@
 <div id="page-wrapper">
 
     <!-- Header -->
-    <section id="header" class="bg-gray-900 text-white p-6">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold"><a href="index.html" class="hover:text-gray-400">Évora</a></h1>
-            <p class="mt-2 text-lg">Móveis Planejados de Luxo</p>
-        </div>
+    <section id="header" class="bg-white text-gray-900 p-6 shadow-md">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                
+                <img src="assets/img/logo.png" alt="Logo da Évora" class="h-32 max-h-full" style="transform: scale(1.4);">
+            </div>
 
-        <!-- Nav -->
-        <nav id="nav" class="mt-6">
-            <ul class="flex justify-center space-x-6">
-                <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
-                <li><a href="marmore.html" class="hover:text-gray-400">Móveis de Mármore</a></li>
-                <li><a href="mdf.html" class="hover:text-gray-400">Móveis de MDF</a></li>
-                <li><a href="contato.html" class="hover:text-gray-400">Contato</a></li>
-            </ul>
-        </nav>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="flex space-x-6">
+                    <li><a href="marmore.html" class="text-gray-900 hover:text-gold-600">Móveis de Mármore</a></li>
+                    <li><a href="mdf.html" class="text-gray-900 hover:text-gold-600">Móveis de MDF</a></li>
+                    <li><a href="contato.html" class="text-gray-900 hover:text-gold-600">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </section>
 
-    <!-- Intro -->
-    <section id="intro" class="bg-gray-100 text-center py-12">
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gold-200 text-center py-20">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold text-gray-800">Móveis Planejados para Seu Estilo</h2>
-            <p class="mt-4 text-lg text-gray-600">Explore nossas coleções de móveis de luxo feitos sob medida para você.</p>
+            <h2 class="text-4xl font-bold text-gray-800">Transforme Seu Espaço com Estilo</h2>
+            <p class="mt-4 text-lg text-gray-700">Explore móveis planejados de luxo, projetados especialmente para você.</p>
             <div class="mt-6">
-                <a href="marmore.html" class="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700">Ver Móveis de Mármore</a>
-                <a href="mdf.html" class="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 ml-4">Ver Móveis de MDF</a>
+                <a href="marmore.html" class="bg-gold-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gold-700">Ver Móveis de Mármore</a>
+                <a href="mdf.html" class="bg-gold-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gold-700 ml-4">Ver Móveis de MDF</a>
             </div>
         </div>
     </section>
 
-    <!-- Main -->
-    <section id="main" class="bg-white py-12">
-        <div class="text-center">
+    <!-- Destaques Section -->
+    <section id="destaques" class="py-12 bg-white">
+        <div class="container mx-auto text-center">
             <h2 class="text-3xl font-semibold text-gray-800">Destaques</h2>
-        </div>
-        <div class="container mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="assets/img/marmore1.jpg" alt="Mesa de Mármore" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold">Mesa de Mármore</h3>
-                    <p class="mt-2 text-gray-600">Perfeita para salas elegantes e sofisticadas.</p>
-                    <a href="marmore.html" class="mt-4 inline-block bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700">Ver Mais</a>
+            <p class="mt-4 text-lg text-gray-600">Confira os móveis mais procurados.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/marmore1.jpg" alt="Mesa de Mármore" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Mesa de Mármore</h3>
+                        <p class="mt-2 text-gray-600">Perfeita para salas elegantes e sofisticadas.</p>
+                        <a href="marmore.html" class="mt-4 inline-block bg-gold-600 text-white px-4 py-2 rounded-lg hover:bg-gold-700">Ver Mais</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="assets/img/mdf1.jpg" alt="Mesa de MDF" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold">Mesa de MDF</h3>
-                    <p class="mt-2 text-gray-600">Design moderno e versátil para qualquer ambiente.</p>
-                    <a href="mdf.html" class="mt-4 inline-block bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700">Ver Mais</a>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/mdf1.jpg" alt="Mesa de MDF" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Mesa de MDF</h3>
+                        <p class="mt-2 text-gray-600">Design moderno e versátil para qualquer ambiente.</p>
+                        <a href="mdf.html" class="mt-4 inline-block bg-gold-600 text-white px-4 py-2 rounded-lg hover:bg-gold-700">Ver Mais</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <section id="footer" class="bg-gray-900 text-white py-8">
+    <section id="footer" class="bg-gold-600 text-white py-8">
         <div class="container mx-auto text-center">
             <h2 class="text-xl font-bold">Entre em Contato</h2>
             <p class="mt-4 text-lg">Caso tenha dúvidas ou queira solicitar um orçamento, entre em contato conosco.</p>
-
-            <!-- Contact Form -->
-            <form method="post" action="#" class="mt-6">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <input type="text" name="name" id="contact-name" placeholder="Nome" class="p-3 border rounded">
-                    <input type="email" name="email" id="contact-email" placeholder="Email" class="p-3 border rounded">
-                </div>
-                <textarea name="message" id="contact-message" placeholder="Mensagem" rows="4" class="w-full p-3 mt-4 border rounded"></textarea>
-                <div class="mt-4">
-                    <button type="submit" class="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700">Enviar</button>
-                </div>
-            </form>
         </div>
     </section>
 
